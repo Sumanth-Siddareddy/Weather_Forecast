@@ -1,0 +1,298 @@
+/* Mobile Layout */
+@media (min-width: 320px) and (max-width: 426px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url('images/tablet_background.jpg');
+        background-size: cover;
+        background-repeat: no;
+        font-family: sans-serif;
+        width: 100vw;
+        backdrop-filter: blur(6px);
+    }
+
+    .nav__bar {
+        height: 20vh;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 1rem;
+        justify-content: space-around;
+        color: rgb(255, 255, 255);
+        background-color: #0000001e;
+    }
+
+    .Webpage__Name {
+        text-align: center;
+    }
+
+    #city__name {
+        border-radius: 8px 0 0 8px;
+        padding: 5px;
+        font-size: 20px;
+        border: 1px solid grey;
+        float: left;
+        width: 10rem;
+        background: #f1f1f1;
+        margin-left: 3rem;
+    }
+
+    button {
+        border-radius: 0 8px 8px 0;
+        width: 30px;
+        padding: 5px;
+        background: #008cff;
+        color: white;
+        font-size: 20px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #0b7dda;
+    }
+
+    .present__weather {
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .left {
+        height: 50vh;
+        padding: 1rem;
+        
+    }
+
+    .present__weather,
+    .left {
+        color: rgb(0, 0, 0);
+    }
+
+    .part__One {
+        margin-left:3rem;
+        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+    }
+
+    .part__Two {
+        margin-left:3rem;
+        margin-top:3rem;
+        display: grid;
+        grid-template-rows: repeat(2, 20vh);
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    .part__One, .part__Two{
+        font-weight: 700;
+    }
+
+    .weather_Condition .icon {
+        align-self: center;
+    }
+
+    
+
+    .part__Two p {
+        color: #000;
+        font-weight: 550;
+    }
+
+    .part__Two .text {
+        font-weight: 600;
+        padding: 8px;
+        margin-top: 8px;
+    }
+
+    .Forecast__Name {
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .right {
+        display: grid;
+        margin: 1rem;
+    }
+
+    .day {
+        display: grid;
+        grid-template-columns: repeat(3,33%);
+        grid-template-rows:repeat(2,10vh) ;
+        list-style: none;
+        border-bottom: 2px solid #000;
+    }
+
+    .day>li {
+        padding: 5px;
+        align-self: center;
+        font-weight: 600;
+    }
+
+    .contact {
+        height: 10vh;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #0b7ddacc;
+        color: antiquewhite;
+    }
+
+    .contact a {
+        text-decoration: none;
+        color: antiquewhite;
+        font-weight: 700;
+    }
+}
+
+/* Tablet & laptop Layout */
+@media (min-width: 426px)  {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url('images/tablet_background.jpg');
+        background-size: cover;
+        background-repeat: no;
+        font-family: sans-serif;
+        width: 100vw;
+        backdrop-filter: blur(6px);
+    }
+
+    .nav__bar {
+        height: 20vh;
+        width: 100vw;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 1rem;
+        padding-left: 7rem;
+        justify-content: space-around;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        background-color: #0000001e;
+        
+    }
+
+    .Webpage__Name {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    #city__name {
+        border-radius: 8px 0 0 8px;
+        padding: 5px;
+        font-size: 20px;
+        border: 1px solid grey;
+        float: left;
+        width: 20rem;
+        background: #f1f1f1;
+        
+    }
+
+    button {
+        border-radius: 0 8px 8px 0;
+        width: 50px;
+        padding: 5px;
+        background: #008cff;
+        color: white;
+        font-size: 20px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #0b7dda;
+    }
+
+    .present__weather {
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .left {
+        height: 35vh;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: start;
+        padding: 1rem;
+    }
+
+    .present__weather,
+    .left {
+        color: #000;
+    }
+
+    .part__One {
+        align-self: center;
+        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px;
+    }
+
+    .part__Two {
+        align-self: center;
+        display: grid;
+        grid-template-rows: 100px;
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    .part__One, .part__Two{
+        font-weight: 700;
+    }
+
+    .Forecast__Name {
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 2rem;
+        
+    }
+
+    .right {
+        display: grid;
+        margin: 1rem;
+    }
+
+    .day {
+        display: grid;
+        grid-template-columns: repeat(6,16%);
+        grid-template-rows:repeat(1,10vh) ;
+        list-style: none;
+        border-bottom: 2px solid #000;
+    }
+
+    .day>li {
+        padding: 5px;
+        align-self: center;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+
+    .contact {
+        height: 10vh;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #0b7ddacc;
+        color: antiquewhite;
+    }
+
+    .contact a {
+        text-decoration: none;
+        color: antiquewhite;
+        font-weight: 700;
+    }
+}

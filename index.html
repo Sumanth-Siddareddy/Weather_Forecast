@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="mobile.css">
+
+  <!-- FOR SEARCH ICON -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <!-- Header contains title of webpage and search option -->
+  <header class="nav__bar">
+    <h1 class="Webpage__Name">Weather Forecast</h1>
+    <div>
+      <input type="text" placeholder="location" id="city__name">
+    <button onclick="getWeather()"><i class="fa fa-search"></i></button>
+    </div>
+  </header>
+
+  <!-- main section contains weather conditions of 
+       1. Present day and
+       2. next 5-days -->
+  <main class="weather__details">
+    
+    <!-- left div contains Present weather details -->
+    <h3 class="present__weather">weather</h3>
+<div class="Current__Weather left">
+    <!-- part__One contains :
+         1. Temperature
+         2. Location/city name
+         3. Date & Time  -->
+    <div class="part__One">
+        <p class="location"></p>
+        <p class="temperature"></p>
+        <p class="Date_Time"><span class="date"></span> <span class="time"></span></p>
+    </div>
+
+    <!-- part__Two contains :
+         1. Weather condition
+         2. Wind speed
+         3. Rain / precipitation
+         4. Humidity -->
+    <div class="part__Two">
+        
+        <div class="weather_Condition">
+            <span class="text"></span>
+            <br>
+            <img src="" alt="" class="icon">
+        </div>
+
+        <div class="wind_speed">
+            <p>Wind speed</p>
+            <span class="text"></span>
+        </div>
+        <div class="rain">
+            <p>Rain</p>
+            <span class="text"></span>
+        </div>
+        <div class="humidity">
+            <p>Humidity</p>
+            <span class="text"></span>
+        </div>
+    </div>
+</div><!-- End of left portion / Current Weather Details -->
+
+
+    <!-- right div contains weather details of next 7days -->
+    <h3 class="Forecast__Name">For Next 7 Days</h3>
+    <div class="Weather__Forecast right">
+      <!-- Each div(day) contains:
+           1. temp
+           2. date-time
+           3. Weather condition
+           4. wind speed
+           5. Rain / precipitation
+           6. Humidity -->
+
+           <div class="day"> <!-- Day 1 -->
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </div>
+          <br>
+           <div class="day"> <!-- Day 2 -->
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </div>
+          <br>
+           <div class="day"> <!-- Day 3 -->
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </div>
+          <br>
+           <div class="day"> <!-- Day 4 -->
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </div>
+          <br>
+           <div class="day"> <!-- Day 5 -->
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </div>
+           <div class="day"> <!-- Day 6 -->
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </div>
+           <div class="day"> <!-- Day 7 -->
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </div>
+    </div><!-- End of right portion / Weather__Forecast for next 7-days -->
+  
+  </main>
+
+  <footer class="contact">
+    <div>Contact Us:
+      <br>
+      <p class="tel">+91-7997910451</p>
+    </div>
+    <a href="mailto:siddareddy.venkatasumanth28@gmail.com">Feedback</a>
+  </footer>
+
+  <div id="Weather-results"></div>
+
+  <!-- JS -->
+  <script src="Script.js"></script>
+  <script src="demo.js"></script>
+</body>
+</html>
